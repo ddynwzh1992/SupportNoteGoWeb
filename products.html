@@ -60,7 +60,12 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+		$(function () { $(".tooltip-options a").tooltip({html : true });});
+	</script>
 	</head>
 	<body>
 	
@@ -69,14 +74,14 @@
 	<header id="fh5co-header" role="banner">
 		<div class="container">
 			<div class="header-inner">
-				<h1><a href="index.html">Bold<span>.</span></a></h1>
+				<h1><a href="index.html">SupportNote<span>.</span></a></h1>
 				<nav role="navigation">
 					<ul>
-						<li class="active"><a href="products.html">Products</a></li>
-						<li><a href="services.html">Services</a></li>
-						<li><a href="pricing.html">Pricing</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="contact.html">Contact</a></li>
+							<li><a href="index.html">Tools</a></li>
+							<li><a href="products.html">SoftWares</a></li>
+							<li><a href="services.html">Blogs&Pages</a></li>
+							<li><a href="pricing.html">Contacts</a></li>
+							<li><a href="contact.html">Suggest</a></li>
 						<li class="cta"><a href="#">Get started</a></li>
 					</ul>
 				</nav>
@@ -88,13 +93,14 @@
 	<aside id="fh5co-hero" clsas="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-image: url(images/slide_3.jpg);">
+		   	<li style="background-image: url(images/slide_3.jpg); height: 50%">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
 		   				<div class="slider-text-inner">
-		   					<h2>Our Awesome Products</h2>
-		   					<p class="fh5co-lead">Designed with <i class="icon-heart"></i> by the fine folks at <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a></p>
+		   					<h2>Useful Softwares</h2>
+							   <!-- <p class="fh5co-lead">Designed with <i class="icon-heart"></i> by the fine folks at <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a></p> -->
+							   <p class="fh5co-lead">Please turn to according module by your chosen</a></p>
 		   				</div>
 		   			</div>
 		   		</div>
@@ -106,18 +112,18 @@
 	
 
 	<div id="fh5co-grid-products" class="animate-box">
-		<div class="container">
+		<!-- <div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 					<h2>See our products</h2>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		
 		<div class="col-1">
-			<a href="#" class="item-grid one" style="background-image: url(images/image_4.jpg)">
+			<a href="#software" class="item-grid one" style="background-image: url(images/image_4.jpg)">
 				<div class="v-align">
 					<div class="v-align-middle">
 						<span class="icon"><img src="images/9.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
@@ -126,7 +132,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="#" class="item-grid three" style="background-image: url(images/image_3.jpg)">
+			<a href="#software2" class="item-grid three" style="background-image: url(images/image_3.jpg)">
 				<div class="v-align">
 					<div class="v-align-middle">
 						<span class="icon"><img src="images/18.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
@@ -137,7 +143,7 @@
 			</a>
 		</div>
 		<div class="col-2">
-			<a href="#" class="item-grid two" style="background-image: url(images/image_2.jpg)">
+			<a href="#software3" class="item-grid two" style="background-image: url(images/image_2.jpg)">
 				<div class="v-align">
 					<div class="v-align-middle">
 						<span class="icon"><img src="images/27.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
@@ -151,7 +157,7 @@
 
 
 
-		<div class="col-1 reverse">
+		<!-- <div class="col-1 reverse">
 			<a href="#" class="item-grid one" style="background-image: url(images/image_4.jpg)">
 				<div class="v-align">
 					<div class="v-align-middle">
@@ -181,13 +187,164 @@
 					</div>
 				</div>
 			</a>
-		</div>
+		</div> -->
 		
 		
 	</div>
-	
 
-	<div id="fh5co-blog" class="animate-box">
+
+	<div  class="fh5co-services">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+						<!-- <h2>Our pleasure to serve you</h2>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p> -->
+					</div>
+					<div  class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+							<!-- <h2>Our pleasure to serve you</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p> -->
+						</div>
+					<div id= "software" class="col-md-4 text-center item-block animate-box">
+						<span class="icon"><img src="images/30.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+						<h3>Strategy</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+						<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+					</div>
+					<div class="col-md-4 text-center item-block animate-box">
+						<span class="icon"><img src="images/18.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+						<h3>Explore</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+						<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+					</div>
+					<div class="col-md-4 text-center item-block animate-box">
+						<span class="icon"><img src="images/27.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+						<h3>Expertise</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+						<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+					</div>
+	
+					<div class="col-md-4 text-center item-block animate-box">
+						<span class="icon"><img src="images/8.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+						<h3>Strategy</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+						<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+					</div>
+					<div class="col-md-4 text-center item-block animate-box">
+						<span class="icon"><img src="images/7.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+						<h3>Explore</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+						<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+					</div>
+					<div class="col-md-4 text-center item-block animate-box">
+						<span class="icon"><img src="images/9.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+						<h3>Expertise</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+						<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		
+
+
+		<div  class="fh5co-services">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+							<!-- <h2>Our pleasure to serve you</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p> -->
+						</div>
+						<div id= "software2" class="col-md-4 text-center item-block animate-box">
+							<span class="icon"><img src="images/30.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+							<h3>Strategy</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						</div>
+						<div class="col-md-4 text-center item-block animate-box">
+							<span class="icon"><img src="images/18.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+							<h3>Explore</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						</div>
+						<div class="col-md-4 text-center item-block animate-box">
+							<span class="icon"><img src="images/27.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+							<h3>Expertise</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						</div>
+		
+						<div class="col-md-4 text-center item-block animate-box">
+							<span class="icon"><img src="images/8.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+							<h3>Strategy</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						</div>
+						<div class="col-md-4 text-center item-block animate-box">
+							<span class="icon"><img src="images/7.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+							<h3>Explore</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						</div>
+						<div class="col-md-4 text-center item-block animate-box">
+							<span class="icon"><img src="images/9.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+							<h3>Expertise</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div  class="fh5co-services">
+				<div id= "software3" class="container">
+					<div class="row">
+						<div  class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+							<!-- <h2>Our pleasure to serve you</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p> -->
+						</div>
+						<div  class="col-md-4 text-center item-block animate-box">
+							<span class="icon"><img src="images/30.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+							<h3>Strategy</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						</div>
+						<div class="col-md-4 text-center item-block animate-box">
+							<span class="icon"><img src="images/18.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+							<h3>Explore</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						</div>
+						<div class="col-md-4 text-center item-block animate-box">
+							<span class="icon"><img src="images/27.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+							<h3>Expertise</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						</div>
+		
+						<div class="col-md-4 text-center item-block animate-box">
+							<span class="icon"><img src="images/8.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+							<h3>Strategy</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						</div>
+						<div class="col-md-4 text-center item-block animate-box">
+							<span class="icon"><img src="images/7.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+							<h3>Explore</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						</div>
+						<div class="col-md-4 text-center item-block animate-box">
+							<span class="icon"><img src="images/9.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
+							<h3>Expertise</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+	<!-- <div id="fh5co-blog" class="animate-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
@@ -239,7 +396,7 @@
 				</div>
 			</div>
 		</div>	
-	</div>
+	</div> -->
 
 	<div class="fh5co-cta" style="background-image: url(images/image_3.jpg);">
 		<div class="overlay"></div>
