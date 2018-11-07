@@ -7,7 +7,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Bold &mdash; Free HTML5 Bootstrap Website Template by FreeHTML5.co</title>
+	<title>SupportNote</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -60,12 +60,32 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
 	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script>
+	<!-- <script>
 		$(function () { $(".tooltip-options a").tooltip({html : true });});
-	</script>
+	</script> -->
+	<script>$(document).ready(function(){
+			$(window).scroll(function () {
+				   if ($(this).scrollTop() > 50) {
+					   $('#back-to-top').fadeIn();
+				   } else {
+					   $('#back-to-top').fadeOut();
+				   }
+			   });
+			   // scroll body to 0px on click
+			   $('#back-to-top').click(function () {
+				   $('#back-to-top').tooltip('hide');
+				   $('body,html').animate({
+					   scrollTop: 0
+				   }, 800);
+				   return false;
+			   });
+			   
+			   $('#back-to-top').tooltip('show');
+		
+		});</script>
 	</head>
 	<body>
 	
@@ -73,6 +93,7 @@
 	<div id="fh5co-page">
 	<header id="fh5co-header" role="banner">
 		<div class="container">
+				<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 			<div class="header-inner">
 				<h1><a href="index.html">SupportNote<span>.</span></a></h1>
 				<nav role="navigation">
@@ -99,7 +120,7 @@
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
 		   				<div class="slider-text-inner">
 		   					<h2>Useful Softwares</h2>							   
-							   <p class="fh5co-lead">Please turn to according module by your chosen</a></p>
+							   <p class="fh5co-lead">Please pull down and choose the software you are interested in</a></p>
 		   				</div>
 		   			</div>
 		   		</div>
@@ -126,7 +147,7 @@
 				<div class="v-align">
 					<div class="v-align-middle">
 						<span class="icon"><img src="images/9.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-						<h3 class="title">Geographical App</h3>
+						<h3 class="title">Firefox Plugin</h3>
 						<h5 class="category">Web Application</h5>
 					</div>
 				</div>
@@ -135,7 +156,7 @@
 				<div class="v-align">
 					<div class="v-align-middle">
 						<span class="icon"><img src="images/18.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-						<h3 class="title">Communication App</h3>
+						<h3 class="title">Chrome Plugin</h3>
 						<h5 class="category">Web Application</h5>
 					</div>
 				</div>
@@ -146,8 +167,8 @@
 				<div class="v-align">
 					<div class="v-align-middle">
 						<span class="icon"><img src="images/27.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-						<h3 class="title">Golf Club Tracker</h3>
-						<h5 class="category">Web Application</h5>
+						<h3 class="title">Windows Software</h3>
+						<h5 class="category">Desktop Application</h5>
 					</div>
 				</div>
 			</a>
@@ -205,40 +226,40 @@
 						</div>
 					<div id= "software" class="col-md-4 text-center item-block animate-box">
 						<span class="icon"><img src="images/30.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-						<h3>Strategy</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-						<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						<h3>GreaseMonkey</h3>
+						<p>Greasemonkey is a user script manager. Find the scripts from the link as below<br></p>
+						<p><a href="https://s3.cn-north-1.amazonaws.com.cn/supportnote/Greasemonkey_backup_20181024_133748.zip" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 					</div>
 					<div class="col-md-4 text-center item-block animate-box">
 						<span class="icon"><img src="images/18.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-						<h3>Explore</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-						<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						<h3>Violentmonkey</h3>
+						<p>Violentmonkey provides userscripts support for browsers. Find the scripts from the link as below<br></p>
+						<p><a href="https://s3.cn-north-1.amazonaws.com.cn/supportnote/gm_scripts.zip" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 					</div>
 					<div class="col-md-4 text-center item-block animate-box">
 						<span class="icon"><img src="images/27.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-						<h3>Expertise</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-						<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						<h3>Clippings</h3>
+						<p>Saves and manages frequently-entered text for later pasting into web page forms in Firefox </p>
+						<p><a href="http://aecreations.sourceforge.net/clippings/index.php" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 					</div>
 	
 					<div class="col-md-4 text-center item-block animate-box">
 						<span class="icon"><img src="images/8.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-						<h3>Strategy</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-						<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						<h3>FoxClocks</h3>
+						<p>FoxClocks shows times around the world at the bottom of your browser. <br></p>
+						<p><a href="https://foxclocks.org/" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 					</div>
 					<div class="col-md-4 text-center item-block animate-box">
 						<span class="icon"><img src="images/7.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-						<h3>Explore</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-						<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						<h3>Proxy SwitchyOmega</h3>
+						<p>Manage and switch between multiple proxies quickly & easily.<br></p>
+						<p><a href="https://github.com/FelisCatus/SwitchyOmega" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 					</div>
 					<div class="col-md-4 text-center item-block animate-box">
 						<span class="icon"><img src="images/9.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-						<h3>Expertise</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-						<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+						<h3>Recover-E</h3>
+						<p>Recover-E: Form Auto + Manual Recovery<br><br></p>
+						<p><a href="https://addons.mozilla.org/zh-CN/firefox/addon/recover-e/?src=search" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 					</div>
 				</div>
 			</div>
@@ -257,40 +278,40 @@
 						</div>
 						<div id= "software2" class="col-md-4 text-center item-block animate-box">
 							<span class="icon"><img src="images/30.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-							<h3>Strategy</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+							<h3>Momentum</h3>
+							<p>Replace new tab page with a personal dashboard featuring to-do, weather, and inspiration.<br><br></p>
+							<p><a href="https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 						</div>
 						<div class="col-md-4 text-center item-block animate-box">
 							<span class="icon"><img src="images/18.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-							<h3>Explore</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+							<h3>Proxy SwitchyOmega</h3>
+							<p>Manage and switch between multiple proxies quickly & easily.<br><br></p>
+							<p><a href="https://chrome.google.com/webstore/detail/padekgcemlokbadohgkifijomclgjgif" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 						</div>
 						<div class="col-md-4 text-center item-block animate-box">
 							<span class="icon"><img src="images/27.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-							<h3>Expertise</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+							<h3>Tampermonkey</h3>
+							<p>The world's most popular userscript manager，used to run so called userscripts (sometimes also called Greasemonkey scripts). </p>
+							<p><a href="https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 						</div>
 		
 						<div class="col-md-4 text-center item-block animate-box">
 							<span class="icon"><img src="images/8.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-							<h3>Strategy</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+							<h3>Tampermonkey Scripts</h3>
+							<p>The world's most popular userscript manager. Find the scripts from the link as below<br><br></p>
+							<p><a href="https://s3.cn-north-1.amazonaws.com.cn/supportnote/tampermonkey-backup-chrome-2018-11-07T05-52-51.984Z.zip" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 						</div>
 						<div class="col-md-4 text-center item-block animate-box">
 							<span class="icon"><img src="images/7.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-							<h3>Explore</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+							<h3>Awesome Screenshot</h3>
+							<p>Screencast, record screen as video. Screen capture for full page, annotate, blur sensitive info, and share with one-click uploads.</p>
+							<p><a href="https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 						</div>
 						<div class="col-md-4 text-center item-block animate-box">
 							<span class="icon"><img src="images/9.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-							<h3>Expertise</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+							<h3>LastPass</h3>
+							<p>LastPass, an award-winning password manager, saves your passwords and gives you secure access from every computer and mobile device.</p>
+							<p><a href="https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?hl=en-US" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 						</div>
 					</div>
 				</div>
@@ -305,97 +326,45 @@
 						</div>
 						<div  class="col-md-4 text-center item-block animate-box">
 							<span class="icon"><img src="images/30.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-							<h3>Strategy</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+							<h3>Proxifier</h3>
+							<p>Proxifier allows network applications that do not support working through proxy servers to operate through a SOCKS or HTTPS proxy and chains.</p>
+							<p><a href="https://www.proxifier.com/" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 						</div>
 						<div class="col-md-4 text-center item-block animate-box">
 							<span class="icon"><img src="images/18.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-							<h3>Explore</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+							<h3>Wox</h3>
+							<p>A full-featured launcher, access programs and web contents as you type. Be more productive ever since.</p>
+							<p><a href="http://www.wox.one/" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 						</div>
 						<div class="col-md-4 text-center item-block animate-box">
 							<span class="icon"><img src="images/27.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-							<h3>Expertise</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+							<h3>Everything</h3>
+							<p>Locate files and folders by name instantly.<br><br><br></p>
+							<p><a href="https://www.voidtools.com/" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 						</div>
-		
 						<div class="col-md-4 text-center item-block animate-box">
 							<span class="icon"><img src="images/8.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-							<h3>Strategy</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+							<h3>Synergy</h3>
+							<p>Mouse and Keyboard Sharing.Share your mouse and keyboard between Windows, Mac and Linux computers</p>
+							<p><a href="https://symless.com/synergy/features" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 						</div>
 						<div class="col-md-4 text-center item-block animate-box">
 							<span class="icon"><img src="images/7.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-							<h3>Explore</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+							<h3>VScode</h3>
+							<p>Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS.</p>
+							<p><a href="https://code.visualstudio.com/" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 						</div>
 						<div class="col-md-4 text-center item-block animate-box">
 							<span class="icon"><img src="images/9.svg" alt="Free HTML5 Templates" class="img-responsive"></span>
-							<h3>Expertise</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-							<p><a href="#" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
+							<h3>Quip</h3>
+							<p>Secure sharing and collaboration on docs, spreadsheets, checklists, and chat. Client & Team Management.</p>
+							<p><a href="https://quip.com/" class="btn btn-primary with-arrow">Learn more <i class="icon-arrow-right"></i></a></p>
 						</div>
+						
 					</div>
 				</div>
 			</div>
-	<!-- <div id="fh5co-blog" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>Latest <em>from</em> Blog</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<a class="fh5co-entry" href="#">
-						<figure>
-						<img src="images/image_1.jpg" alt="Free Website Template, Free HTML5 Bootstrap Template" class="img-responsive">
-						</figure>
-						<div class="fh5co-copy">
-							<h3>We Create Awesome Free Templates</h3>
-							<span class="fh5co-date">June 8, 2016</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a class="fh5co-entry" href="#">
-						<figure>
-						<img src="images/image_2.jpg" alt="Free Website Template, Free HTML5 Bootstrap Template" class="img-responsive">
-						</figure>
-						<div class="fh5co-copy">
-							<h3>Handcrafted Using CSS3 &amp; HTML5</h3>
-							<span class="fh5co-date">June 8, 2016</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a class="fh5co-entry" href="#">
-						<figure>
-						<img src="images/image_3.jpg" alt="Free Website Template, Free HTML5 Bootstrap Template" class="img-responsive">
-						</figure>
-						<div class="fh5co-copy">
-							<h3>We Try To Update The Site Everyday</h3>
-							<span class="fh5co-date">June 8, 2016</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-12 text-center">
-					<p><a href="#" class="btn btn-primary btn-outline with-arrow">View More Posts <i class="icon-arrow-right"></i></a></p>
-				</div>
-			</div>
-		</div>	
-	</div> -->
+
 
 	<div class="fh5co-cta" style="background-image: url(images/image_3.jpg);">
 		<div class="overlay"></div>
@@ -413,23 +382,12 @@
 		<div class="container">
 			<div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
 				<h3>About Us</h3>
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+				<!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p> -->
 				<p><a href="#" class="btn btn-primary btn-outline with-arrow btn-sm">I'm button <i class="icon-arrow-right"></i></a></p>
 			</div>
 			<div class="col-md-6 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
 				<h3>Our Services</h3>
-				<ul class="float">
-					<li><a href="#">Web Design</a></li>
-					<li><a href="#">Branding &amp; Identity</a></li>
-					<li><a href="#">Free HTML5</a></li>
-					<li><a href="#">HandCrafted Templates</a></li>
-				</ul>
-				<ul class="float">
-					<li><a href="#">Free Bootstrap Template</a></li>
-					<li><a href="#">Free HTML5 Template</a></li>
-					<li><a href="#">Free HTML5 &amp; CSS3 Template</a></li>
-					<li><a href="#">HandCrafted Templates</a></li>
-				</ul>
+				
 
 			</div>
 
@@ -445,7 +403,7 @@
 			
 			
 			<div class="col-md-12 fh5co-copyright text-center">
-				<p>&copy; 2016 Free HTML5 template. All Rights Reserved. <span>Designed with <i class="icon-heart"></i> by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Colored Icons by <a href="https://dribbble.com/TrinhHo" target="_blank">Trinh Ho</a> Demo Images by <a href="http://unsplash.com/" target="_blank">Unsplash</a></span></p>	
+				<p>&copy; AWS Support @2018</p>	
 			</div>
 			
 		</div>
