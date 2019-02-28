@@ -63,16 +63,26 @@
 	<script src="js/jquery.min.js"></script>
     <script type="text/javascript">
     
+// function alertMsg(){
+// 	var email=('wangaws@nwcdcloud.cn');
+// 	var cc = $('#ccText').val();
+//     var subject = $('#subject').val();
+// 	var body_message = $('#message').val();
+// 	var mailto_link = 'mailto:' + email + '?subject=' + subject + '&cc=' + cc + '&body=' + body_message;
+//
+//     win = window.open(mailto_link, 'emailWindow');
+//     if (win && win.open && !win.closed) win.close();
+// }
 function alertMsg(){
-	var email=('wangaws@nwcdcloud.cn');
 	var cc = $('#ccText').val();
-    var subject = $('#subject').val();
-	var body_message = $('#message').val();
-	var mailto_link = 'mailto:' + email + '?subject=' + subject + '&cc=' + cc + '&body=' + body_message;
-
-    win = window.open(mailto_link, 'emailWindow');
-    if (win && win.open && !win.closed) win.close();
+	var subject = $('#subject').val()
+	var messages = $('#message').val()
+	$.ajax({
+		type: "POST",
+		url: "login",
+		data: {cc:cc,subject:subject,messages:messages}})
 }
+
 	</script>
 	</head>
 	<body>
