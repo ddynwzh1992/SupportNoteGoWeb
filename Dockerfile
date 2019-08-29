@@ -1,4 +1,4 @@
-FROM        golang:1.13rc1-buster
+FROM        golang:1.11-alpine3.10
 
 ENV	    PORT	80
 	
